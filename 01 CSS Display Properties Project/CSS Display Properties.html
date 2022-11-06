@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CSS Display Properties</title>
+
+        <style>
+            body {
+                font-size: 40px;
+                text-align: center;
+                margin-top: 200px;
+            }
+            #div-1 {
+                display: block;  /* Default Display for div */
+                background-color: red;
+            }
+            #span-1 {
+                display: inline;  /* Default Display for span */
+                                  /* inline display can not set width and height */
+                background-color: cyan;
+            }
+            img {
+                display: inline-block;  /* Default Display for img */
+                                        /* inline-block display can set width and height */
+                width: 200px;
+                height: 200px;
+            }
+            #span-2 {
+                background-color: purple;
+            }
+            #div-2 {
+                display: inline-block;
+                background-color: green;
+            }
+            #div-3 {
+                display: none;  /* none display will remove the element from the page */
+                background-color: orange;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="div-1">This is a div</div>
+        <span id="span-1">This is a span</span>
+        <img id="img-1" src="https://source.unsplash.com/xfngap_DToE">
+        <span id="span-2">This is another<br>span</span>
+        <div id="div-2">This is another div</div>
+        <div id="div-3">This is another div</div>
+    </body>
+</html>
